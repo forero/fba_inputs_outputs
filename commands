@@ -1,0 +1,7 @@
+fba_run --targets targets/mtl_cut_E_bright_north.fits --sky targets/sky_cut_E_north.fits --footprint tiles/tiles_cut_E_bright_north.fits --rundate 2020-01-01T00:00:00 --dir fba_run/bright/ --overwrite
+
+fba_merge_results --targets targets/mtl_cut_E_bright_north.fits --sky targets/sky_cut_E_north.fits --dir fba_run/bright/ 
+
+fba_run --targets targets/mtl_cut_E_dark_north.fits --sky targets/sky_cut_E_north.fits --footprint tiles/tiles_cut_E_dark_north.fits --rundate 2020-01-01T00:00:00 --dir fba_run/dark/ --overwrite
+
+fba_merge_results --targets targets/mtl_cut_E_dark_north.fits --sky targets/sky_cut_E_north.fits --dir fba_run/dark/
